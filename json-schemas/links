@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://vdmeer.github.io/json-schemas/links.json#",
+    "id": "http://vdmeer.github.io/json-schemas/links",
     "description": "A schema for SKB links as part of other SKB objects",
     "type": "object",
     "properties": {
