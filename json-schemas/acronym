@@ -22,7 +22,7 @@
             "description": "An key, if the auto-generated key is not sufficient"
         },
         "links": {
-            "$ref": "http://vdmeer.github.io/json-schemas//links",
+            "$ref": "http://vdmeer.github.io/json-schemas/links",
             "description": "A set of URLs for an acronym"
         }
     },
