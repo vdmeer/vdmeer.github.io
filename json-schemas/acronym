@@ -22,7 +22,7 @@
             "description": "An key, if the auto-generated key is not sufficient"
         },
         "links": {
-            "id": "links",
+            "$ref": "links",
             "description": "A set of URLs for an acronym"
         }
     },
