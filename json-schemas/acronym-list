@@ -5,7 +5,7 @@
     "description": "A schema for an list of SKB acronym",
     "type": "array",
     "items": {
-        "id": "http://vdmeer.github.io/json-schemas/acronym",
+        "$ref": "http://vdmeer.github.io/json-schemas/acronym",
         "minimum": 0,
         "exclusiveMinimum": true,
         "description": "An acronym in the list"
