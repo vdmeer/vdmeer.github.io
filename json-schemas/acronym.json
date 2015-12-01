@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://github.com/vdmeer/skb/json-schemas/acronym",
+    "id": "https://vdmeer.github.io/json-schemas/acronym",
     title: "SKB Acronym",
     "description": "A schema for an SKB acronym",
     "type": "object",
@@ -22,7 +22,7 @@
             "description": "An key, if the auto-generated key is not sufficient"
         },
         "links": {
-            "$ref": "http://github.com/vdmeer/skb/json-schemas/links",
+            "$ref": "https://vdmeer.github.io/json-schemas/links",
             "description": "A set of URLs for an acronym"
         }
     },
