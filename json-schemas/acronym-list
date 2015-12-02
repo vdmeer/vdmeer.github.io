@@ -6,8 +6,6 @@
     "type": "array",
     "items": {
         "$ref": "http://vdmeer.github.io/json-schemas/acronym",
-        "minItems": 1,
-        "uniqueItems": true,
         "description": "An acronym in the list"
     }
 }
