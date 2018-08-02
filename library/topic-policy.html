@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.5">
-<title>Library</title>
+<title>Policy-based Management</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -420,51 +420,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Library</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_articles">Articles</a>
+<li><a href="#_policy_based_management">Policy-based Management</a>
 <ul class="sectlevel2">
-<li><a href="#_1800">1800</a></li>
-<li><a href="#_1970">1970</a></li>
-<li><a href="#_1980">1980</a></li>
-<li><a href="#_1990">1990</a></li>
-<li><a href="#_2000">2000</a></li>
-<li><a href="#_2010">2010</a></li>
-</ul>
-</li>
-<li><a href="#_book">Book</a>
-<ul class="sectlevel2">
-<li><a href="#_1800_2">1800</a></li>
-<li><a href="#_1920">1920</a></li>
-<li><a href="#_1950">1950</a></li>
-<li><a href="#_1960">1960</a></li>
-<li><a href="#_2000_2">2000</a></li>
-<li><a href="#_2010_2">2010</a></li>
-</ul>
-</li>
-<li><a href="#_in_proceedings_papers">In Proceedings (Papers)</a>
-<ul class="sectlevel2">
-<li><a href="#_1970_2">1970</a></li>
-<li><a href="#_1980_2">1980</a></li>
-<li><a href="#_1990_2">1990</a></li>
-<li><a href="#_2000_3">2000</a></li>
-<li><a href="#_2010_3">2010</a></li>
-</ul>
-</li>
-<li><a href="#_misc">Misc</a></li>
-<li><a href="#_master_thesis">Master Thesis</a></li>
-<li><a href="#_phd_thesis">PhD Thesis</a></li>
-<li><a href="#_report">Report</a>
-<ul class="sectlevel2">
-<li><a href="#_1970_3">1970</a></li>
-<li><a href="#_2000_4">2000</a></li>
-</ul>
-</li>
-<li><a href="#_standard">Standard</a>
-<ul class="sectlevel2">
-<li><a href="#_ietf">IETF</a></li>
+<li><a href="#_discussion_taken_from_vdm_noms_2018">Discussion (taken from vdm/noms/2018)</a></li>
 </ul>
 </li>
 </ul>
@@ -472,33 +433,61 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_articles">Articles</h2>
+<h2 id="_policy_based_management">Policy-based Management</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_1800">1800</h3>
+<h3 id="_discussion_taken_from_vdm_noms_2018">Discussion (taken from vdm/noms/2018)</h3>
 <div class="paragraph">
-<p><strong>Gottlieb Frege, Über Sinn und Bedeutung, 1892 (English: On Sense and Reference, LATER: On Sense and Meaning)</strong></p>
+<p>Understanding the role of policies and the policy-based approach requires some historical context.
+The separation of strategy from system (design and process) was first described in (Hansen 1970).</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: philosophical definition for a name</p>
-</li>
-<li>
-<p>Publisher: Seeley &amp; Co. of London</p>
-</li>
-<li>
-<p>Links
-<a href="https://en.wikipedia.org/wiki/Sense_and_reference">Wikipedia: en</a> |
-<a href="https://de.wikipedia.org/wiki/%C3%9Cber_Sinn_und_Bedeutung">Wikipedia: de</a> |
-<a href="https://www.goodreads.com/book/show/20631495-on-sense-and-reference?from_search=true">Goodreads</a> |
-<a href="https://www.freud2lacan.com/docs/%C3%9Cber_Sinn_und_Bedeutung_bilingual.pdf">pdf:en &amp; de</a></p>
-</li>
-</ul>
+<div class="paragraph">
+<p>Policy was first used in the 1970’s for security (Bell, 1973) where a relation <em>W</em> provides access control <em>rules</em> to govern system security.
+These rules help to govern state transitions on receiving requests.
+(Dobson, 1989) states that a system specification describes <em>what</em> a system does while a policy describes how.
+Here, the dynamic features are <em>policy</em>, <em>role</em>, and <em>control</em>.</p>
 </div>
+<div class="paragraph">
+<p>In the mid 1970’s operating systems began using the term policy as an artifact of control (Levin, 1975), where users could influence kernel-space decisions without requiring an expensive kernel to user space switch.
+In (Jomier, 1981) the authors separate static and dynamic policies for memory allocation, for static memory allocated at scheduling time with dynamic memory changing with the process.
+The policy/mechanism principle for operating system resource allocation is introduced in (Levin, 1975), while (Day, PNA, 2007) explains how this principle can be applied to networks and their management.</p>
 </div>
-<div class="sect2">
-<h3 id="_1970">1970</h3>
+<div class="paragraph">
+<p>Policies are first used in communication systems in (Rouse, 1979) to control sharing resources as rules for <em>control</em>.
+In (Kamoun, 1981) rules are used to detect and later prevent network congestion.</p>
+</div>
+<div class="paragraph">
+<p>Event Condition Action (ECA) rules appear first in active databases (Dayal, 1988).
+A defined event triggers the evaluation of a defined set of queries (condition) and a defined action is executed if the condition is satisfied.
+The processing of rules is strongly associated to database transactions.
+Event types for ECA are defined as database operation, temporal, and external notification.</p>
+</div>
+<div class="paragraph">
+<p>Policy as a paradigm for network management was defined by Sloman&#8217;s Imperial College research team.
+This work was, at least partially, based on ODP and OSI&#8217;s network management (Sloman, 1990), also introducing domains.
+One of the main focus points was access control (Moffet, 1990).
+Policy for network management then is originally defined in (Sloman, 1994), based on earlier work (Robinson, 1988) (Twidle, 1988), as well as the PhD thesis' of Robinson (1988), Moffet (1990), and Twidle (1993).
+Originally focusing on access control, the work introduced domains, subject, and target, plus policy categories (and models) and a policy system (with language and tooling) called Ponder.
+This is then followed by policy standards, such as the IETF policy framework, DMTF CIM, TMF SID, to name a just view.
+A detailed historic perspective on policy can be found in (Boutaba, 2007).</p>
+</div>
+<div class="paragraph">
+<p>A deep understanding of policy requires study of policy frameworks (Triantafyllopoulou, 2013), approaches (Phan, 2008), and concepts for specifications (Damianou, 2002).
+Policies from different domains were also analyzed, such as cognitive radio (Mitola, 2009), security (Han, 2012), network traffic and QoS (Stone, 2001), and XML and open environments (Yagüe, 2006).</p>
+</div>
+<div class="paragraph">
+<p>Approaches for models that allow multiple PMs in a single PDM have been developed in (Strassner, 2004) and more recently in (Strassner, 2017).
+Here, each PM is bound to its specific definitions, for instance an ECA policy is bound to its inherent rule structure, so while being extensible, it is not easy to add new policy models.</p>
+</div>
+<div class="paragraph">
+<p>A better approach is to specify a formal taxonomy that informs a formal PDM, independent of any specific PM, for instance in (Davy, 2008).</p>
+</div>
+<div class="paragraph">
+<p>Tool support for syntactic and semantic translation between models can be achieved (Barrett, 2007/GIIS) and (Barrett, 2007/MACE).
+However, it is important to note that semantic translation cannot be fully automated.
+In (Brennan, 2010) we study inter-domain relationships and policy translation, both important aspects.
+We have summarized today’s challenges for policy-based management in [39] and [40].</p>
+</div>
 <div class="paragraph">
 <p><strong>R. Levin,  E. Cohen, W. Corwin, F. Pollack, W. Wulf</strong>: <em>The nucleus of a multiprogramming system</em>, 1970</p>
 </div>
@@ -514,6 +503,45 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Links
 <a href="https://doi.org/10.1145/362258.362278">DOI</a> |
 <a href="http://ddhf.dk/site_dk/rc/pbh/MonitorPaper.pdf">PDF</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>D. Elliott Bell, Leonard J. LaPadula</strong>: <em>Secure Computer Systems: Mathematical Foundations</em>, 1973</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: access control <em>rules</em> to govern system security, relation <em>W</em> provides rules of access <em>control</em> governing system security, rule helps system in any state to decide on request and move to next state</p>
+</li>
+<li>
+<p>Published: MITRE Technical Report 2547, Volume I, March 1, 1973</p>
+</li>
+<li>
+<p>Links
+<a href="http://www-personal.umich.edu/~cja/LPS12b/refs/belllapadula1.pdf">PDF</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>R. Levin,  E. Cohen, W. Corwin, F. Pollack, W. Wulf</strong>: <em>Policy/Mechanism Separation in Hydra</em>, 1975</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: first principle of separation of mechanism and policy, policy is artifact of <em>control</em> for mechanisms, separates kernel level decision making from user level decision declaration</p>
+</li>
+<li>
+<p>Published: SOSP '75 Proceedings of the fifth ACM Symposium on Operating Systems Principles, pages 132-140</p>
+</li>
+<li>
+<p>Also: ACM SIGOPS Operating Systems Review 9(5):132-140 · November 1975</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1145/1067629.806531">DOI</a> |
+<a href="https://www.researchgate.net/publication/234785923_Policymechanism_separation_in_Hydra">ResearchGate</a> |
+<a href="http://www.cse.psu.edu/~trj1/cse543-f12/docs/p132-levin-hydra.pdf">PDF</a></p>
 </li>
 </ul>
 </div>
@@ -534,9 +562,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_1980">1980</h3>
 <div class="paragraph">
 <p><strong>Geneviève Jomier</strong>: <em>A Mathematical Model for the Comparison of Static and Dynamic Memory Allocation in a Paged System</em>, 1981</p>
 </div>
@@ -624,419 +649,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_1990">1990</h3>
-<div class="paragraph">
-<p><strong>Jonathan Moffett, Morris Sloman, Kevin Twidle</strong>: <em>Specifying Discretionary Access Control Policy for Distributed Systems</em>, 1990</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: defines policy as a paradigm for network management</p>
-</li>
-<li>
-<p>Published: Computer Communications, Volume 13, Issue 9, November 1990, Pages 571-580</p>
-</li>
-<li>
-<p>Links
-<a href="https://doi.org/10.1016/0140-3664(90)90008-5">DOI</a> |
-<a href="https://s3.amazonaws.com/academia.edu.documents/30736613/10.1.1.41.6306.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&amp;Expires=1533210926&amp;Signature=iw01kOQ6Q0RPnOXfgeRMVsiq2gc%3D&amp;response-content-disposition=inline%3B%20filename%3DSpecifying_discretionary_access_control.pdf">PDF</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Morris J. Sloman</strong>: <em>Policy driven Management for Distributed Systems</em>, 1994</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: defines policy as a paradigm for network management</p>
-</li>
-<li>
-<p>Published: Journal of Network and Systems Management (JNSM), December 1994, Volume 2, Issue 4, pp 333–360</p>
-</li>
-<li>
-<p>Links
-<a href="https://doi.org/10.1007/BF02283186">DOI</a> |
-<a href="https://core.ac.uk/download/pdf/1587309.pdf">PDF</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_2000">2000</h3>
-<div class="paragraph">
-<p>include::article/2000/stone-network-2001.ado[]c
-<strong>Mariemma I. Yagüe</strong>: <em>Survey on XML-Based Policy Languages for Open Environments</em>, 2006</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: early work on policy in network management</p>
-</li>
-<li>
-<p>Published: Journal of Information Assurance and Security 1 (2006) 11-20</p>
-</li>
-<li>
-<p>Links
-<a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.470.6902">CiteSeer</a> |
-<a href="https://www.researchgate.net/publication/257380833_Survey_on_XML-Based_Policy_Languages_for_Open_Environments">ResearchGate</a> |
-<a href="https://www.researchgate.net/profile/Mariemma_Valle/publication/257380833_Survey_on_XML-Based_Policy_Languages_for_Open_Environments/links/0c960529464ce28a3e000000/Survey-on-XML-Based-Policy-Languages-for-Open-Environments.pdf">PDF</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Raouf Boutaba, Issam Aib</strong>: <em>Policy-based Management: A Historical Perspective</em>, 2007</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: history and evolution of policy in management, recursive models, good source for references on policy</p>
-</li>
-<li>
-<p>Published: Journal of Network and Systems Management, December 2007, Volume 15, Issue 4, pp 447–480</p>
-</li>
-<li>
-<p>Links
-<a href="https://doi.org/10.1007/s10922-007-9083-8">DOI</a> |
-<a href="http://nsm1.cs.uwaterloo.ca/rboutaba/Papers/Journals/2007/Boutaba07.pdf">PDF</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>StevenDavy, BrendanJennings, JohnStrassner</strong>: <em>The Policy Continuum – Policy Authoring and Conflict Analysis</em>, 2008</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: a continuum for policies, multiple policy models</p>
-</li>
-<li>
-<p>Published: Computer Communications, Volume 31, Issue 13, 15 August 2008, Pages 2981-2995</p>
-</li>
-<li>
-<p>Links
-<a href="https://doi.org/10.1016/j.comcom.2008.04.018">DOI</a> |
-<a href="http://www.tssg.org/files/archives/2008_COMCOM_SDavy_et_al_site_formatted.pdf">PDF</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_2010">2010</h3>
-<div class="paragraph">
-<p><strong>Rob Brennan et al.</strong>: <em>Multidomain IT Architectures for Next-Generation Communications Service Providers</em>, 2010</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Authors: Rob Brennan, Kevin Feeney, John Keeney, Declan O&#8217;Sullivan, Joel J. Fleck, Simon Foley, Sven van der Meer</p>
-</li>
-<li>
-<p>Reasons to read: inter-domain relationships and policy translation</p>
-</li>
-<li>
-<p>Published:  IEEE Communications Magazine (Volume: 48, Issue: 8, August 2010)</p>
-</li>
-<li>
-<p>Links
-<a href="https://doi.org/10.1109/MCOM.2010.5534595">DOI</a> |
-<a href="https://www.researchgate.net/publication/224163138_Multidomain_IT_architectures_for_next-generation_communications_service_providers_Next-Generation_Telco_IT_Architectures">ResearchGate</a> |
-<a href="http://www.tara.tcd.ie/handle/2262/40593">PDF: TCD</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Alex McKenzie</strong>: <em>INWG and the Conception of the Internet: An Eyewitness Account</em>, 2016</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: INWG history</p>
-</li>
-<li>
-<p>Publisher: IEEE Annals of the History of Computing (Volume: 33, Issue: 1, Jan. 2011)</p>
-</li>
-<li>
-<p>Links
-<a href="https://doi.org/10.1109/MAHC.2011.9">DOI</a> |
-<a href="http://alexmckenzie.weebly.com/inwg-and-the-conception-of-the-internet-an-eyewitness-account.html">online</a>,
-<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5723076">PDF</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Weili Han, Chang Lei</strong>: <em>A Survey on Policy Languages in Network and Security Management</em>, 2012</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: servey of policy languages, here for security</p>
-</li>
-<li>
-<p>Published: Computer Networks, Volume 56, Issue 1, 12 January 2012, Pages 477-489</p>
-</li>
-<li>
-<p>Links
-<a href="https://doi.org/10.1016/j.comnet.2011.09.014">DOI</a> |
-<a href="http://crypto.fudan.edu.cn/people/weili/papers/han-policysurvey.pdf">PDF</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Andrew L. Russell</strong>: <em>OSI: The Internet That Wasn’t</em>, 2013</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: OSI standardization history</p>
-</li>
-<li>
-<p>Publisher: IEEE Spectrum (Volume: 50, Issue: 8, August 2013)</p>
-</li>
-<li>
-<p>Links
-<a href="https://doi.org/10.1109/MSPEC.2013.6565559">DOI</a> |
-<a href="https://spectrum.ieee.org/tech-history/cyberspace/osi-the-internet-that-wasnt">online</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Andrew L. Russell, Valérie Schafer</strong>: <em>In the Shadow of the ARPANET and Internet: Louis Pouzin and the Cyclades Network in the 1970s</em>, 2014</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: Pouzin and CYCLADES in the historic context of ARPANET and Internet</p>
-</li>
-<li>
-<p>Publisher: Technology and Culture, Johns Hopkins University Press, Volume 55, Number 4, October 2014</p>
-</li>
-<li>
-<p>Links
-<a href="https://doi.org/10.1353/tech.2014.0096">DOI</a> |
-<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.692.1974&amp;rep=rep1&amp;type=pdf">PDF</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>John Day</strong>: <em>The Clamor Outside as INWG Debated: Economic War Comes to Networking</em>, 2016</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: INWG history</p>
-</li>
-<li>
-<p>Publisher: IEEE Annals of the History of Computing (Volume: 38, Issue: 3, July-Sept. 2016)</p>
-</li>
-<li>
-<p>Links
-<a href="https://doi.org/10.1109/MAHC.2015.70">DOI</a> |
-<a href="http://arussell.org/INWG-Day.pdf">PDF</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_book">Book</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_1800_2">1800</h3>
-<div class="paragraph">
-<p><strong>Edwin A. Abbott, Flatland, 1884</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Publisher: Seeley &amp; Co. of London</p>
-</li>
-<li>
-<p>Links:
-<a href="https://en.wikipedia.org/wiki/Flatland">Wikipedia</a> |
-<a href="https://github.com/Ivesvdf/flatland">LaTeX by Ivesvdf</a> |
-<a href="https://archive.org/details/flatlandromanceo00abbouoft">Internet Archive</a> |
-<a href="http://www.gutenberg.org/ebooks/201">Gutenberg</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_1920">1920</h3>
-<div class="paragraph">
-<p><strong>Ludwig Wittgenstein, Tractatus Logico-Philosophicus (Logisch-Philosophische Abhandlung), 1921 (German), 1922 (English)</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: picture theory, logical atomism, distinction between saying and showing, Wittgentstein&#8217;s ladder, proposition 7</p>
-</li>
-<li>
-<p>Publisher:Kegan Paul, Trench, Trubner &amp; CO</p>
-</li>
-<li>
-<p>Links
-<a href="https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus">Wikipedia</a> |
-<a href="https://www.goodreads.com/book/show/12075.Tractatus_Logico_Philosophicus?from_search=true">Goodreads</a> |
-<a href="http://www.gutenberg.org/ebooks/5740">eBooks at Gutenberg Project</a> |
-<a href="http://people.umass.edu/klement/tlp/">eBooks at umass</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_1950">1950</h3>
-<div class="paragraph">
-<p><strong>W. Ross Ashby, An Introduction to Cybernetics, 1956</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: cybernetics into, Law of Requisite Variety</p>
-</li>
-<li>
-<p>Publisher: John Wiley &amp; Sons</p>
-</li>
-<li>
-<p>Links
-<a href="https://www.goodreads.com/book/show/583911.An_Introduction_to_Cybernetics?ac=1&amp;from_search=true">Goodreads</a> |
-<a href="https://archive.org/details/introductiontocy00ashb">pdf: original typeset</a> |
-<a href="http://pespmc1.vub.ac.be/books/IntroCyb.pdf">pdf: new typeset</a> |
-<a href="https://www.panarchy.org/ashby/variety.1956.html">discussion on requisite variety</a> |
-<a href="https://en.wikiquote.org/wiki/W._Ross_Ashby">WikiQoutes</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Karl Popper, Logik der Forschung, 1934 (English: The Logic of Scientific Discovery 1959)</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Publisher: Hutchinson &amp; Co</p>
-</li>
-<li>
-<p>Reasons to read: "The first step is to state a hypothesis. To state a hypothesis, one must start with a theory to be invalidated", shows: you can never prove a theory correct; you can only invalidate it</p>
-</li>
-<li>
-<p>Links:
-<a href="https://en.wikipedia.org/wiki/The_Logic_of_Scientific_Discovery">Wikipedia</a> |
-<a href="https://www.goodreads.com/book/show/61550.The_Logic_of_Scientific_Discovery?from_search=true">Goodreads</a> |
-<a href="https://archive.org/details/PopperLogicScientificDiscovery">en: online</a> |
-<a href="http://strangebeautiful.com/other-texts/popper-logic-scientific-discovery.pdf">pdf/en</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_1960">1960</h3>
-<div class="paragraph">
-<p><strong>Norbert Wiener, Cybernetic OR Control and Communication in the Animal and the Machine, 1965</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: the standard work on cybernetics (with definition) and control</p>
-</li>
-<li>
-<p>Publisher:</p>
-</li>
-<li>
-<p>Links:
-<a href="https://en.wikipedia.org/wiki/Cybernetics:_Or_Control_and_Communication_in_the_Animal_and_the_Machine">Wikipedia</a> |
-<a href="https://www.goodreads.com/book/show/294941.Cybernetics?ac=1&amp;from_search=true">Goodreads</a> |
-<a href="http://www.uberty.org/wp-content/uploads/2015/07/Norbert_Wiener_Cybernetics.pdf">pdf: original typeset</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_2000_2">2000</h3>
-<div class="paragraph">
-<p><strong>John C. Strassner</strong>: <em>Policy-based Network Management: Solutions for the Next Generation</em>, 2004</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Publisher: Morgan Kaufman</p>
-</li>
-<li>
-<p>Links:
-<a href="https://www.sciencedirect.com/science/book/9781558608597">ScienceDirect</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>John Day, Patterns in Network Architecture: A Return to Fundamentals, 2007</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Publisher: Pearson Edition</p>
-</li>
-<li>
-<p>Links:
-<a href="https://www.goodreads.com/book/show/8193269-patterns-in-network-architecture">Goodreads</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_2010_2">2010</h3>
-<div class="paragraph">
-<p><strong>Andrew L. Russell</strong>: <em>Open Standards and the Digital Age: History, Ideology, and Networks</em>, 2014</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: history of networks and network standards</p>
-</li>
-<li>
-<p>Publisher: Cambridge University Press</p>
-</li>
-<li>
-<p>Links
-<a href="https://www.goodreads.com/book/show/21864772-open-standards-and-the-digital-age">Goodread</a> |
-<a href="https://books.google.ie/books?hl=en&amp;lr=&amp;id=jqroAgAAQBAJ&amp;oi=fnd&amp;pg=PR10&amp;dq=Open+Standards+and+the+Digital+Age:+History,+Ideology,+and+Networks&amp;ots=FmJdKgGvKB&amp;sig=Jtr3LL3gO1DxfO_dipkP0gjpW8E&amp;redir_esc=y#v=onepage&amp;q=Open%20Standards%20and%20the%20Digital%20Age%3A%20History%2C%20Ideology%2C%20and%20Networks&amp;f=false">Google Books</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_in_proceedings_papers">In Proceedings (Papers)</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_1970_2">1970</h3>
-<div class="paragraph">
-<p><strong>R. Levin,  E. Cohen, W. Corwin, F. Pollack, W. Wulf</strong>: <em>Policy/Mechanism Separation in Hydra</em>, 1975</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: first principle of separation of mechanism and policy, policy is artifact of <em>control</em> for mechanisms, separates kernel level decision making from user level decision declaration</p>
-</li>
-<li>
-<p>Published: SOSP '75 Proceedings of the fifth ACM Symposium on Operating Systems Principles, pages 132-140</p>
-</li>
-<li>
-<p>Also: ACM SIGOPS Operating Systems Review 9(5):132-140 · November 1975</p>
-</li>
-<li>
-<p>Links
-<a href="https://doi.org/10.1145/1067629.806531">DOI</a> |
-<a href="https://www.researchgate.net/publication/234785923_Policymechanism_separation_in_Hydra">ResearchGate</a> |
-<a href="http://www.cse.psu.edu/~trj1/cse543-f12/docs/p132-levin-hydra.pdf">PDF</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_1980_2">1980</h3>
 <div class="paragraph">
 <p><strong>D.C. Robinson, Morris Sloman</strong>: <em>Domains: a new Approach to Distributed System Management</em>, 1988</p>
 </div>
@@ -1090,9 +702,24 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p><strong>Jonathan Moffett, Morris Sloman, Kevin Twidle</strong>: <em>Specifying Discretionary Access Control Policy for Distributed Systems</em>, 1990</p>
 </div>
-<div class="sect2">
-<h3 id="_1990_2">1990</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: defines policy as a paradigm for network management</p>
+</li>
+<li>
+<p>Published: Computer Communications, Volume 13, Issue 9, November 1990, Pages 571-580</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1016/0140-3664(90)90008-5">DOI</a> |
+<a href="https://s3.amazonaws.com/academia.edu.documents/30736613/10.1.1.41.6306.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&amp;Expires=1533210926&amp;Signature=iw01kOQ6Q0RPnOXfgeRMVsiq2gc%3D&amp;response-content-disposition=inline%3B%20filename%3DSpecifying_discretionary_access_control.pdf">PDF</a></p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
 <p><strong>Morris J. Sloman</strong>: <em>Management for Open Distributed Processing</em>, 1990</p>
 </div>
@@ -1111,9 +738,42 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p><strong>Morris J. Sloman</strong>: <em>Policy driven Management for Distributed Systems</em>, 1994</p>
 </div>
-<div class="sect2">
-<h3 id="_2000_3">2000</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: defines policy as a paradigm for network management</p>
+</li>
+<li>
+<p>Published: Journal of Network and Systems Management (JNSM), December 1994, Volume 2, Issue 4, pp 333–360</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1007/BF02283186">DOI</a> |
+<a href="https://core.ac.uk/download/pdf/1587309.pdf">PDF</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Gary N. Stone, Bert Lundy, Geoffrey G. Xie,</strong>: <em>Network Policy Languages: A Survey and a New Approach</em>, 2001</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: survey of policy languages, and an approach for them</p>
+</li>
+<li>
+<p>Published: IEEE Network (Volume: 15, Issue: 1, Jan/Feb 2001)</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1109/65.898818">DOI</a> |
+<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.183.3528&amp;rep=rep1&amp;type=pdf">PDF</a></p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
 <p><strong>N. C. Damianou, A. K. Bandara, Morris Sloman, Emil C. Lupu</strong>: <em>A Survey of Policy Specification Approaches</em>, 2002</p>
 </div>
@@ -1130,6 +790,39 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.19.7339">CiteSeer</a> |
 <a href="http://www.doc.ic.ac.uk/mss/Papers/PolicySurvey.pdf">PDF: IC</a> |
 <a href="https://www.researchgate.net/profile/Emil_Lupu/publication/2536722_A_Survey_of_Policy_Specification_Approaches/links/00b4952b026ee23f7d000000.pdf">PDF: ResearchGate</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>John C. Strassner</strong>: <em>Policy-based Network Management: Solutions for the Next Generation</em>, 2004</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Publisher: Morgan Kaufman</p>
+</li>
+<li>
+<p>Links:
+<a href="https://www.sciencedirect.com/science/book/9781558608597">ScienceDirect</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Mariemma I. Yagüe</strong>: <em>Survey on XML-Based Policy Languages for Open Environments</em>, 2006</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: early work on policy in network management</p>
+</li>
+<li>
+<p>Published: Journal of Information Assurance and Security 1 (2006) 11-20</p>
+</li>
+<li>
+<p>Links
+<a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.470.6902">CiteSeer</a> |
+<a href="https://www.researchgate.net/publication/257380833_Survey_on_XML-Based_Policy_Languages_for_Open_Environments">ResearchGate</a> |
+<a href="https://www.researchgate.net/profile/Mariemma_Valle/publication/257380833_Survey_on_XML-Based_Policy_Languages_for_Open_Environments/links/0c960529464ce28a3e000000/Survey-on-XML-Based-Policy-Languages-for-Open-Environments.pdf">PDF</a></p>
 </li>
 </ul>
 </div>
@@ -1161,6 +854,42 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li>
 <p>Published: Second IEEE International Workshop on Modelling Autonomic Communications Environments, MACE 2007</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Raouf Boutaba, Issam Aib</strong>: <em>Policy-based Management: A Historical Perspective</em>, 2007</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: history and evolution of policy in management, recursive models, good source for references on policy</p>
+</li>
+<li>
+<p>Published: Journal of Network and Systems Management, December 2007, Volume 15, Issue 4, pp 447–480</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1007/s10922-007-9083-8">DOI</a> |
+<a href="http://nsm1.cs.uwaterloo.ca/rboutaba/Papers/Journals/2007/Boutaba07.pdf">PDF</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>StevenDavy, BrendanJennings, JohnStrassner</strong>: <em>The Policy Continuum – Policy Authoring and Conflict Analysis</em>, 2008</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: a continuum for policies, multiple policy models</p>
+</li>
+<li>
+<p>Published: Computer Communications, Volume 31, Issue 13, 15 August 2008, Pages 2981-2995</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1016/j.comcom.2008.04.018">DOI</a> |
+<a href="http://www.tssg.org/files/archives/2008_COMCOM_SDavy_et_al_site_formatted.pdf">PDF</a></p>
 </li>
 </ul>
 </div>
@@ -1199,9 +928,46 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p><strong>Rob Brennan et al.</strong>: <em>Multidomain IT Architectures for Next-Generation Communications Service Providers</em>, 2010</p>
 </div>
-<div class="sect2">
-<h3 id="_2010_3">2010</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Authors: Rob Brennan, Kevin Feeney, John Keeney, Declan O&#8217;Sullivan, Joel J. Fleck, Simon Foley, Sven van der Meer</p>
+</li>
+<li>
+<p>Reasons to read: inter-domain relationships and policy translation</p>
+</li>
+<li>
+<p>Published:  IEEE Communications Magazine (Volume: 48, Issue: 8, August 2010)</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1109/MCOM.2010.5534595">DOI</a> |
+<a href="https://www.researchgate.net/publication/224163138_Multidomain_IT_architectures_for_next-generation_communications_service_providers_Next-Generation_Telco_IT_Architectures">ResearchGate</a> |
+<a href="http://www.tara.tcd.ie/handle/2262/40593">PDF: TCD</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Weili Han, Chang Lei</strong>: <em>A Survey on Policy Languages in Network and Security Management</em>, 2012</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: servey of policy languages, here for security</p>
+</li>
+<li>
+<p>Published: Computer Networks, Volume 56, Issue 1, 12 January 2012, Pages 477-489</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1016/j.comnet.2011.09.014">DOI</a> |
+<a href="http://crypto.fudan.edu.cn/people/weili/papers/han-policysurvey.pdf">PDF</a></p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
 <p><strong>Dionysia Triantafyllopoulou, Adrian Kliks, Valentin Rakovic, Liljana Gavrilovska</strong>: <em>Existing Policy Frameworks: An Overview</em>, 2013</p>
 </div>
@@ -1220,373 +986,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_misc">Misc</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><strong>Alex McKenzie</strong>: <em>Collection of Computer Networking Development Records</em></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>written between 1972-1979</p>
-</li>
-<li>
-<p>see Charles Babbage Institute (CBI) collections</p>
-</li>
-<li>
-<p>Links:
-<a href="http://www.cbi.umn.edu/collections/archmss.html">CBI</a> with identifier 123 |
-<a href="https://archives.lib.umn.edu/repositories/3/resources/242">McKenzie Collection</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_master_thesis">Master Thesis</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><strong>Frank Gadegast, TCP/IP-basierte Dienste zur Speicherung von Multimedia-Daten, 1995</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Technical University Berlin, OKS</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Stefan Arbanowski, Generic Description of Telecommunication Services and Dynamic Resource Selection in Intelligent Communication Environments, 1996</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Technical University Berlin, OKS</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Stefan Franz, Job and Stream Control in Heterogeneous Hardware and Software Architectures, 1998</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Technical University Berlin, OKS</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Markus Zell, Selection of Converter Chains by Means of Quality of Service Analysis, 1998</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Technical University Berlin, OKS</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Stephan Steglich, Management of Distributed Objects in Middleware Platforms, 1998</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Technical University Berlin, OKS</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Manuela-Ionelia Dini, Temporal-Oriented Policy-Driven Network Management, 2000</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: McGill University, Montreal</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Simon Dutkowski, Design Patterns for Distributed Communication Systems, 2000</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Technical University Berlin, OKS</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Wolfram Fritzsch, Integrated Management of Distributed Components, 2001</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Technical University Berlin, OKS</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Mandeep Singh, Integrated Management Services for Directory, Naming, and Specification of Distributed Components, 2001</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Technical University Berlin, OKS</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Mario Schuster, An Open Service Platform for Context and Location Aware Applications, 2001</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Technical University Berlin, OKS</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Michael Fahner, Information Visualization for Distributed Systems, 2002</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Technical University Berlin, OKS</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Robert O&#8217;Connor, An Investigation into Management Functionality for Ubiquitous Computing Environments, 2004</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Waterford Institute of Technology, TSSG</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Darach Cawley, Development of Smart Services for Smart Spaces, 2004</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Waterford Institute of Technology, TSSG</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Ulla Becker, An Approach for Quality Assurance Management in decentralised Software Engineering Environments in context of Small and Medium-Sized Enterprises, 2005</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Fachhochschule Karlsruhe</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_phd_thesis">PhD Thesis</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><strong>Aiko Pras, Network Management Architectures, 1995</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: University of Twente, Enschede</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Tom Pfeifer, Automatic Conversion of Communication Media, 1999</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Technical University Berlin, OKS</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Roy Thomas Fielding, Architectural Styles and the Design of Network-based Software Architectures, 2000</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: University of California, Irvine</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Brendan Jennings, Network-oriented Load Control for SS.7/IN, 2001</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Dublin City University</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Declan O&#8217;Sullivan, The OISIN framework: Ontology Interoperability in support of Semantic Interoperability, 2006</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Trinity College Dublin</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Stephen Davy, Harnessing Information Models and Ontologies for Policy Conflict Analysis, 2009</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Waterford Institute of Technology, TSSG</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Keara Barrett, A Framework for the Semantic Translation of Policy Language Concepts, 2009</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Waterford Institute of Technology, TSSG</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>John Strassner Barrett, Enabling Autonomic Network Management Decisions Using a Novel Semantic Representation and Reasoning Approach, 2009</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Waterford Institute of Technology, TSSG</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Lei Xu, Automating the Generation, Deployment and Application of Charging Schemes for Composed Communications Services, 2010</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Waterford Institute of Technology, TSSG</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Korbinian Frank, Adaptive and Tractable Bayesian Context Inference for Resource Constrained Devices, 2011</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Waterford Institute of Technology, TSSG</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Griffin Leigh, Managing the Formation and Interaction of Groups within Emerging Social Networks, 2012</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Waterford Institute of Technology, TSSG</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Liam Fallon, Semantic-based Service Analysis and Optimization, 2013</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Trinity College Dublin</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Vladimír Veselý, A new Dawn of Naming, Addressing and Routing on the Internet, 2015</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Brno University of Technology</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Amy de Buitléir, Data Mining Using Artificial Life with Popperian-level Intelligence, 2017</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Institute: Athlone Institute of Technology</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_report">Report</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_1970_3">1970</h3>
-<div class="paragraph">
-<p><strong>D. Elliott Bell, Leonard J. LaPadula</strong>: <em>Secure Computer Systems: Mathematical Foundations</em>, 1973</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: access control <em>rules</em> to govern system security, relation <em>W</em> provides rules of access <em>control</em> governing system security, rule helps system in any state to decide on request and move to next state</p>
-</li>
-<li>
-<p>Published: MITRE Technical Report 2547, Volume I, March 1, 1973</p>
-</li>
-<li>
-<p>Links
-<a href="http://www-personal.umich.edu/~cja/LPS12b/refs/belllapadula1.pdf">PDF</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_2000_4">2000</h3>
-<div class="paragraph">
-<p><strong>Richard Bennett</strong>: <em>Designed for Change: End-to-End Arguments, Internet Innovation, and the Net Neutrality Debate</em>, 2009</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Reasons to read: technical history of the Internet (including CYCLADES), reference for 1986 Internet crash, discussions on current Internet affairs (including RINA)</p>
-</li>
-<li>
-<p>Publisher: Information Technology &amp; Innovation Foundation, ITIF, Washington DC</p>
-</li>
-<li>
-<p>Links
-<a href="https://itif.org/publications/2009/09/25/designed-change-end-end-arguments-internet-innovation-and-net-neutrality">ITIF</a> |
-<a href="http://www.itif.org/files/Designed_for_Change_Presentation.pdf">PDF: talk</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_standard">Standard</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_ietf">IETF</h3>
 <div class="paragraph">
 <p><strong>John C. Strassner, Joel Halpern, Sven van der Meer</strong>: <em>Generic Policy Information Model for simplified use of poLicy Abstractions (SUPA)</em>, 2017</p>
 </div>
@@ -1607,7 +1006,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-08-02 21:47:03 IST
+Last updated 2018-08-02 21:40:05 IST
 </div>
 </div>
 </body>
