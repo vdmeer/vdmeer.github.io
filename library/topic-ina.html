@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.5">
-<title>Introduction to Network Architecture - Reading List</title>
+<title>Introduction to Network Architecture</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -420,13 +420,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Introduction to Network Architecture - Reading List</h1>
+<h1>Introduction to Network Architecture</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_cybernetics">Cybernetics</a></li>
 <li><a href="#_patterns">Patterns</a></li>
 <li><a href="#_philosophy_and_science">Philosophy and Science</a></li>
+<li><a href="#_architecture_principles_invariants">Architecture Principles (invariants)</a>
+<ul class="sectlevel2">
+<li><a href="#_layers_1968">Layers (1968)</a></li>
+<li><a href="#_separating_mechanism_and_policy_1970">Separating Mechanism and Policy (1970)</a></li>
+<li><a href="#_networking_is_ipc_1972">Networking is IPC (1972)</a></li>
+<li><a href="#_theory_of_reliable_transport_1976">Theory of Reliable Transport (1976)</a></li>
+<li><a href="#_naming_and_addressing_1978">Naming and Addressing (1978)</a></li>
+</ul>
+</li>
 <li><a href="#_history">History</a></li>
 </ul>
 </div>
@@ -471,7 +480,25 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_cybernetics">Cybernetics</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>W. Ross Ashby, An Introduction to Cybernetics, 1956</strong></p>
+<p><strong>Marie Neurath</strong>: <em>How Machines Work</em>, 1954</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: the most simple, yet expressive, introduction on machines :)</p>
+</li>
+<li>
+<p>Publisher: Max Parrsih, London</p>
+</li>
+<li>
+<p>Links
+<a href="http://manchesterartgallery.org/blog/machines-which-seem-to-think">gallery with 3 pages</a> |
+<a href="http://www.fulltable.com/iso/mw.htm">all pages</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>W. Ross Ashby</strong>: <em>An Introduction to Cybernetics</em>, 1956</p>
 </div>
 <div class="ulist">
 <ul>
@@ -492,7 +519,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p><strong>Norbert Wiener, Cybernetic OR Control and Communication in the Animal and the Machine, 1965</strong></p>
+<p><strong>Norbert Wiener</strong>: <em>Cybernetic OR Control and Communication in the Animal and the Machine</em>, 1965</p>
 </div>
 <div class="ulist">
 <ul>
@@ -500,7 +527,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Reasons to read: the standard work on cybernetics (with definition) and control</p>
 </li>
 <li>
-<p>Publisher:</p>
+<p>Publisher: MIT Press, Cambridge, Massachusetts</p>
 </li>
 <li>
 <p>Links:
@@ -510,16 +537,113 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p><strong>Humberto R. Maturana</strong>: <em>Biology of Cognition</em>, 1970</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: <mark><mark>tbd</mark></mark></p>
+</li>
+<li>
+<p>Published: Biological Computer Laboratory Research Report BCL 9.0. Urbana IL: University of Illinois, 1970</p>
+</li>
+<li>
+<p>Links
+<a href="http://www.biolinguagem.com/ling_cog_cult/maturana_1970_biology_of_cognition.pdf">PDF</a> |
+<a href="http://www.enolagaia.com/M70-80BoC.html">Online</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Humberto R. Maturana, Francisco J. Valera</strong>: <em>The Tree of Knowledge</em>, 1987</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: <mark><mark>tbd</mark></mark></p>
+</li>
+<li>
+<p>Publisher: Shambhala, Boston &amp; London</p>
+</li>
+<li>
+<p>Links:
+<a href="https://www.goodreads.com/book/show/695440.Tree_of_Knowledge?ac=1&amp;from_search=true">Goodreads</a> |
+<a href="http://www.cybertech-engineering.ch/research/references/Maturana1988/maturana-h-1987-tree-of-knowledge-bkmrk.pdf">pdf</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Hugh Dubberly, Paul Pangaro</strong>: <em>How Cybernetics connects Computing, Counterculture, and Design</em>, 2015</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: historyc context for cybernetics, interactive graph with links and link annotations</p>
+</li>
+<li>
+<p>Publisher: Hippie Modernism: The Struggle for Utopia, Exhibit Catalog,  October 2015</p>
+</li>
+<li>
+<p>Links:
+<a href="http://www.dubberly.com/articles/cybernetics-and-counterculture.html">Paper: html with pdf links</a>,
+<a href="http://cybergraph.dubberly.com/">Interactive Graph</a>,
+<a href="http://staging.dubberly.com/cybernetics/article-inside-text/">Article Text</a></p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_patterns">Patterns</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>John Day, Patterns in Network Architecture: A Return to Fundamentals, 2007</strong></p>
+<p><strong>Christopher Alexander</strong>: <em>A Pattern Language</em>, 1977</p>
 </div>
 <div class="ulist">
 <ul>
+<li>
+<p>Reasons to read: (most) influential book on patterns, laid foundation for software patterns</p>
+</li>
+<li>
+<p>Publisher: Oxford University Press</p>
+</li>
+<li>
+<p>Links:
+<a href="https://en.wikipedia.org/wiki/A_Pattern_Language">Wikipedia</a> |
+<a href="https://www.goodreads.com/book/show/79766.A_Pattern_Language?ac=1&amp;from_search=true">Goodreads</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Christopher Alexander</strong>: <em>The Timeless Way of Building</em>, 1979</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: "how to think about X", a new theory of architecture (and design in general) that relies on the understanding and configuration of design patterns</p>
+</li>
+<li>
+<p>Is actually the introduction to <em>A Pattern Language</em> by the same author, though published later</p>
+</li>
+<li>
+<p>Publisher: Oxford University Press</p>
+</li>
+<li>
+<p>Links:
+<a href="https://en.wikipedia.org/wiki/The_Timeless_Way_of_Building">Wikipedia</a> |
+<a href="https://www.goodreads.com/book/show/106728.The_Timeless_Way_of_Building?from_search=true">Goodreads</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>John Day</strong>: <em>Patterns in Network Architecture: A Return to Fundamentals</em>, 2007</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: fundamental patterns for network architecure, historic context, annectodal context</p>
+</li>
 <li>
 <p>Publisher: Pearson Edition</p>
 </li>
@@ -529,33 +653,66 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p><strong>Jason McC. Smith</strong>: <em>Elemental Design Patterns</em>, 2012</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: scientific approach to software pattern (not OO-software-patterns), comprehensive graphical language</p>
+</li>
+<li>
+<p>Publisher: Addison-Wesley Professional</p>
+</li>
+<li>
+<p>Links
+<a href="https://www.goodreads.com/book/show/12343712-elemental-design-patterns?ac=1&amp;from_search=true">Goodreads</a> |
+<a href="http://www.cs.unc.edu/techreports/02-011.pdf">PDF: technical report</a> |
+<a href="https://www.researchgate.net/profile/P_Stotts/publication/4016067_Elemental_design_patterns_A_formal_semantics_for_composition_of_OO_software_architecture/links/53edebd00cf2981ada173ad5.pdf">PDF: paper</a> |
+<a href="https://www.unc.edu/~stotts/comp723/EDP.pptx">PPTX</a></p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_philosophy_and_science">Philosophy and Science</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Ludwig Wittgenstein, Tractatus Logico-Philosophicus (Logisch-Philosophische Abhandlung), 1921 (German), 1922 (English)</strong></p>
+<p><strong>Isaac Newton</strong>: <em>Regulae Philosophandi</em> or <em>Philosophiæ Naturalis Principia Mathematica</em>, 1687 (English: 1728)</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Reasons to read: picture theory, logical atomism, distinction between saying and showing, Wittgentstein&#8217;s ladder, proposition 7</p>
+<p>Reasons to read: scientific principles only work within a given set of bounds, nature is essentially simple, similar effects must be assigned to the same cause</p>
 </li>
 <li>
-<p>Publisher:Kegan Paul, Trench, Trubner &amp; CO</p>
-</li>
-<li>
-<p>Links
-<a href="https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus">Wikipedia</a> |
-<a href="https://www.goodreads.com/book/show/12075.Tractatus_Logico_Philosophicus?from_search=true">Goodreads</a> |
-<a href="http://www.gutenberg.org/ebooks/5740">eBooks at Gutenberg Project</a> |
-<a href="http://people.umass.edu/klement/tlp/">eBooks at umass</a></p>
+<p>Links:
+<a href="https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica">Wikipedia</a> |
+<a href="http://www.gutenberg.org/ebooks/28233">Project Gutenberg: Latin</a> |
+<a href="http://www.17centurymaths.com/contents/newtoncontents.html">English by Ian Bruce: online</a></p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p><strong>Gottlieb Frege, Über Sinn und Bedeutung, 1892 (English: On Sense and Reference, LATER: On Sense and Meaning)</strong></p>
+<p><strong>Gottfried Leibniz</strong>: <em>Monadology</em> or <em>Lehrsätze über die Monadologie</em>, 1714 (French), 1720 (German)</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: the first (that we know of) and grandest attempt to conceive of the world as as a system, in particular as a system of "reflections" in which the state of every element recursively mirrors the state of the whole</p>
+</li>
+<li>
+<p>Links:
+<a href="https://en.wikipedia.org/wiki/Monadology">Wikipedia</a> |
+<a href="https://www.goodreads.com/book/show/346074.Monadology?from_search=true">Goodreads</a> |
+<a href="http://home.datacomm.ch/kerguelen/monadology/">English: by Robert Latta</a> |
+<a href="https://www.gutenberg.org/ebooks/39441">German: Gutenberg Projekt</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Gottlieb Frege</strong>: <em>Über Sinn und Bedeutung</em> or <em>On Sense and Reference</em> later <em>On Sense and Meaning</em>, 1892</p>
 </div>
 <div class="ulist">
 <ul>
@@ -570,12 +727,103 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <a href="https://en.wikipedia.org/wiki/Sense_and_reference">Wikipedia: en</a> |
 <a href="https://de.wikipedia.org/wiki/%C3%9Cber_Sinn_und_Bedeutung">Wikipedia: de</a> |
 <a href="https://www.goodreads.com/book/show/20631495-on-sense-and-reference?from_search=true">Goodreads</a> |
-<a href="https://www.freud2lacan.com/docs/%C3%9Cber_Sinn_und_Bedeutung_bilingual.pdf">pdf:en &amp; de</a></p>
+<a href="https://www.freud2lacan.com/docs/%C3%9Cber_Sinn_und_Bedeutung_bilingual.pdf">PDF:en &amp; de</a></p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p><strong>Karl Popper, Logik der Forschung, 1934 (English: The Logic of Scientific Discovery 1959)</strong></p>
+<p><strong>Gottlieb Frege</strong>: <em>Grundgesetze der Arithmetik</em> or <em>Basic Laws of Arithmetic</em>, 1893 (Volume I), 1903 (Volume II)</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: the world limited by dimensions, also a social critic</p>
+</li>
+<li>
+<p>Publisher: Seeley &amp; Co. of London</p>
+</li>
+<li>
+<p>Links:
+<a href="https://www.goodreads.com/book/show/22445643-basic-laws-of-arithmetic?from_search=true">Goodreads: en</a> |
+<a href="https://www.goodreads.com/book/show/17259742-grundgesetze-der-arithmetik-begriffsschriftlich-abgeleitet-i-ii?from_search=true">Goodreads: de</a> |
+<a href="https://korpora.zim.uni-duisburg-essen.de/Frege/">PDF: de</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Bertrant Russel</strong>: <em>Introduction to Mathematical Philosophy</em>, 1919</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: introduction to mathematics and the more fundamental "Principia Mathematica"</p>
+</li>
+<li>
+<p>Publisher: George Allen &amp; Unwin, Ltd, London</p>
+</li>
+<li>
+<p>Links:
+<a href="https://en.wikipedia.org/wiki/Introduction_to_Mathematical_Philosophy">Wikipedia</a> |
+<a href="https://www.goodreads.com/book/show/31886.Introduction_to_Mathematical_Philosophy?ac=1&amp;from_search=true">Goodreads</a> |
+<a href="https://archive.org/details/introductiontoma00russuoft">PDF: old typeset</a> |
+<a href="http://people.umass.edu/klement/russell-imp.html">Online at umass</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Ludwig Wittgenstein</strong>: <em>Tractatus Logico-Philosophicus</em> (<em>Logisch-Philosophische Abhandlung</em>), 1921 (German), 1922 (English)</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: picture theory, logical atomism, distinction between saying and showing, Wittgentstein&#8217;s ladder, proposition 7</p>
+</li>
+<li>
+<p>Publisher: Kegan Paul, Trench, Trubner &amp; CO</p>
+</li>
+<li>
+<p>Links
+<a href="https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus">Wikipedia</a> |
+<a href="https://www.goodreads.com/book/show/12075.Tractatus_Logico_Philosophicus?from_search=true">Goodreads</a> |
+<a href="http://www.gutenberg.org/ebooks/5740">eBooks at Gutenberg Project</a> |
+<a href="http://people.umass.edu/klement/tlp/">eBooks at umass</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Ludwig Fleck</strong>: <em>Gensis and Development of a Scientific Fact</em> or <em>Entstehung und Entwicklung einer wissenschaftlichen Tatsache</em>, 1935 (German), 1979 (English)</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: philosophy of science, social process of science</p>
+</li>
+<li>
+<p>Links
+<a href="https://en.wikipedia.org/wiki/The_Structure_of_Scientific_Revolutions">Wikipedia</a> |
+<a href="https://www.goodreads.com/book/show/202695.Genesis_and_Development_of_a_Scientific_Fact">Goodreads</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Joseph Needham</strong>: <em>Science and Civilisation in China</em>, 1954</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: the West was only one to make the leap from artisan to science</p>
+</li>
+<li>
+<p>Publisher: Cambridge University Press</p>
+</li>
+<li>
+<p>Links
+<a href="https://en.wikipedia.org/wiki/Science_and_Civilisation_in_China">Wikipedia</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Karl Popper</strong>: <em>Logik der Forschung</em>, 1934 (English: <em>The Logic of Scientific Discovery</em>, 1959)</p>
 </div>
 <div class="ulist">
 <ul>
@@ -589,10 +837,554 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Links:
 <a href="https://en.wikipedia.org/wiki/The_Logic_of_Scientific_Discovery">Wikipedia</a> |
 <a href="https://www.goodreads.com/book/show/61550.The_Logic_of_Scientific_Discovery?from_search=true">Goodreads</a> |
-<a href="https://archive.org/details/PopperLogicScientificDiscovery">en: online</a> |
-<a href="http://strangebeautiful.com/other-texts/popper-logic-scientific-discovery.pdf">pdf/en</a></p>
+<a href="https://archive.org/details/PopperLogicScientificDiscovery">Online: English</a> |
+<a href="http://strangebeautiful.com/other-texts/popper-logic-scientific-discovery.pdf">PDF: English</a></p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p><strong>Thomas Kuhn</strong>: <em>Structure of Scientific Revolutions</em>, 1962</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: philosophy of science</p>
+</li>
+<li>
+<p>Publisher: University of Chicago Press</p>
+</li>
+<li>
+<p>Links:
+<a href="https://en.wikipedia.org/wiki/The_Structure_of_Scientific_Revolutions">Wikipedia</a> |
+ <a href="https://www.goodreads.com/book/show/61539.The_Structure_of_Scientific_Revolutions?from_search=true">Goodreads</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Robert MacArthur</strong>: <em>Geographical Ecology: Patterns in the Distribution of Species</em>, 1972</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: island of biogeography, "A field cannot consider itself a science until it can progress beyond natural history"</p>
+</li>
+<li>
+<p>Publisher: Vintage</p>
+</li>
+<li>
+<p>Links:
+<a href="https://www.goodreads.com/book/show/3023147-geographical-ecology">Goodreads</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Imre Lakatos</strong>: <em>Proofs and Refutations</em>, 1976</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: the way of thinking, “listen to the problem”</p>
+</li>
+<li>
+<p>Publisher: Cambridge University Press</p>
+</li>
+<li>
+<p>Links:
+<a href="https://en.wikipedia.org/wiki/Proofs_and_Refutations">Wikipedia</a> |
+<a href="https://www.goodreads.com/book/show/434707.Proofs_and_Refutations?from_search=true">Goodreads</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Samuel C. Florman</strong>: <em>The Existential Pleasures of Engineering</em>, 1976</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: to understand engineering, how engineers think and feel about their profession</p>
+</li>
+<li>
+<p>Links
+<a href="https://www.goodreads.com/book/show/1203186.The_Existential_Pleasures_of_Engineering">Goodreads</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Gerald Edelman</strong>: <em>Bright Air Brilliant Fire</em>, 1992</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: theory of Neural Darwinism feeds into Maturana quite nicely, the application of Edelman in Sacks’ Seeing Voices</p>
+</li>
+<li>
+<p>Publisher: Basic Books</p>
+</li>
+<li>
+<p>Links:
+<a href="https://www.goodreads.com/book/show/1120112.Bright_Air_Brilliant_Fire">Goodreads</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Stuart Kaufmann</strong>: <em>The Origins of Order</em>, 1993</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: works out the math and science in detail and shows that life is virtually inevitable, scientific version of "At home in the universe"</p>
+</li>
+<li>
+<p>Publisher: Oxford University Press, USA</p>
+</li>
+<li>
+<p>Links:
+<a href="https://www.goodreads.com/book/show/783559.The_Origins_of_Order">Goodreads</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Dale Miller</strong>: <em>A Proposal for Modules in λProlog</em>, 1993</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: introduces the turing machine syndrome</p>
+</li>
+<li>
+<p>Related: Alberto Momigliano and Mario Ornaghi, Proof-Theoretic and Higher-Order Extensions of Logic Programming, LNCS 6125, 2010</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Links:
+<a href="https://rd.springer.com/chapter/10.1007%2F978-3-642-14309-0_12">springer</a></p>
+</li>
+<li>
+<p>Quote: "This outcome [&#8230;&#8203;] has been named 'recreating the Turing Machine' syndrome [Miller]: starting from a computationally clean and semantically motivated language, one tends to add external mechanisms in order to make it suitable for programming-in-the-large. This inevitably tends to clutter the formal definition of the language (if any), making trusting the language itself and thus reasoning about it problematic."</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Published:  International Workshop on Extensions of Logic Programming, ELP 1993: Extensions of Logic Programming, pp 206-221</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1007/3-540-58025-5_58">DOI</a> |
+<a href="https://link.springer.com/chapter/10.1007/3-540-58025-5_58#citeas">ELP93</a> |
+<a href="https://link.springer.com/content/pdf/10.1007%2F3-540-58025-5_58.pdf">PDF:elp</a> |
+<a href="https://www.researchgate.net/publication/241604108_A_Proposal_for_Modules_in_Prolog_Preliminary_Draft">Draft text</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Stuart Kaufmann</strong>: <em>At Home in the Universe</em>, 1996</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: works out the math and science in detail and shows that life is virtually inevitable, Scientific American (popular science magazine) version of "The origins of order"</p>
+</li>
+<li>
+<p>Publisher: Oxford University Press, USA</p>
+</li>
+<li>
+<p>Links:
+<a href="https://www.goodreads.com/book/show/319006.At_Home_in_the_Universe">Goodreads</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Oliver Sacks</strong>: <em>The Man Who Mistook His Wife for a Hat</em>, 1998</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: aberrations of the human mind, contribute to Maturana’s view</p>
+</li>
+<li>
+<p>Publisher: Touchstone</p>
+</li>
+<li>
+<p>Links:
+<a href="https://www.goodreads.com/book/show/63697.The_Man_Who_Mistook_His_Wife_for_a_Hat_and_Other_Clinical_Tales?from_search=true">Goodreads</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Oliver Sacks</strong>: <em>Seeing Voices</em>, 2000</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: aberrations of the human mind, contribute to Maturana’s view</p>
+</li>
+<li>
+<p>Publisher: Vintage</p>
+</li>
+<li>
+<p>Links:
+<a href="https://www.goodreads.com/book/show/66723.Seeing_Voices">Goodreads</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Lee Smolin</strong>: <em>The Trouble with Physics</em>, 2006</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: "groupthink" anti pattern, role of controversy and disagreement in the progress of science, professionalization has lead to selecting for “master craftsmen” to the almost complete exclusion of “seers.”</p>
+</li>
+<li>
+<p>Publisher: Reed Business Information</p>
+</li>
+<li>
+<p>Links:
+<a href="https://en.wikipedia.org/wiki/The_Trouble_with_Physics">Wikipedia</a> |
+<a href="http://leesmolin.com/writings/the-trouble-with-physics/">online</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Stephen Jay Gould</strong>: <em>The Richness of Life: The Essential Stephen Jay Gould</em>, 2006</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: wrote a monthly article for Natural History on evolution, the collections of his articles are a good primer in how stochastic processes work in the large</p>
+</li>
+<li>
+<p>Publisher: Vintage</p>
+</li>
+<li>
+<p>Links:
+<a href="https://www.goodreads.com/book/show/33937.The_Richness_of_Life?from_search=true">Goodreads</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>David Deutsch</strong>: <em>The Beginning of Infinity</em>, 2011</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: error is the normal state of our knowledge, good and bad philosophy</p>
+</li>
+<li>
+<p>Publisher: Viking</p>
+</li>
+<li>
+<p>Links:
+<a href="https://en.wikipedia.org/wiki/The_Beginning_of_Infinity">Wikipedia</a> |
+<a href="https://www.goodreads.com/book/show/10483171-the-beginning-of-infinity?from_search=true">Goodreads</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_architecture_principles_invariants">Architecture Principles (invariants)</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_layers_1968">Layers (1968)</h3>
+<div class="paragraph">
+<p><strong>Edsger W. Dijkstra</strong>: <em>The Structure of the “THE” Multiprogramming System</em>, 1968</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: introduces concept of layers</p>
+</li>
+<li>
+<p>Published: Communications of the ACM CACM, Volume 11 Issue 5, May 1968, Pages 341-346</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1145/363095.363143">DOI</a> |
+<a href="http://www.cs.utexas.edu/users/EWD/ewd01xx/EWD196.PDF">PDF</a> |
+<a href="http://www.cs.utexas.edu/~EWD/transcriptions/EWD01xx/EWD196.html">TXT</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Edsger W. Dijkstra</strong>: <em>Hierarchical ordering of sequential Processes</em>, 1971</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: a more formal discussio on layers</p>
+</li>
+<li>
+<p>Published: Acta Informatica, June 1971, Volume 1, Issue 2, pp 115–138</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1007/BF00289519">DOI</a> |
+<a href="https://citemaster.net/get/a78f58ca-651b-11e2-a63c-00163e009cc7/EWD310.PDF">PDF</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_separating_mechanism_and_policy_1970">Separating Mechanism and Policy (1970)</h3>
+<div class="paragraph">
+<p><strong>P. Brinch Hansen</strong>: <em>The nucleus of a multiprogramming system</em>, 1970</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: first principle of separation of strategy from process</p>
+</li>
+<li>
+<p>Published: Communications of the ACM CACM, Volume 13 Issue 4, April 1970, Pages 238-241</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1145/362258.362278">DOI</a> |
+<a href="http://ddhf.dk/site_dk/rc/pbh/MonitorPaper.pdf">PDF</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>R. Levin,  E. Cohen, W. Corwin, F. Pollack, W. Wulf</strong>: <em>Policy/Mechanism Separation in Hydra</em>, 1975</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: first principle of separation of mechanism and policy, policy is artifact of <em>control</em> for mechanisms, separates kernel level decision making from user level decision declaration</p>
+</li>
+<li>
+<p>Published: SOSP '75 Proceedings of the fifth ACM Symposium on Operating Systems Principles, pages 132-140</p>
+</li>
+<li>
+<p>Also: ACM SIGOPS Operating Systems Review 9(5):132-140 · November 1975</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1145/1067629.806531">DOI</a> |
+<a href="https://www.researchgate.net/publication/234785923_Policymechanism_separation_in_Hydra">ResearchGate</a> |
+<a href="http://www.cse.psu.edu/~trj1/cse543-f12/docs/p132-levin-hydra.pdf">PDF</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_networking_is_ipc_1972">Networking is IPC (1972)</h3>
+<div class="paragraph">
+<p><strong>Robert M. Metcalf</strong>: <em>Strategies for Operating Systems in Computer Networks</em>, 1972</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: states that networking is Inter Process Communication (IPC)</p>
+</li>
+<li>
+<p>Published: ACM '72 Proceedings of the ACM annual conference - Volume 1, Pages 278-281</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1145/800193.569929">DOI</a> |
+<a href="http://www.intercloudtestbed.org/uploads/2/1/3/9/21396364/strategies_for_operating_systems_in_computer_networks.pdf">PDF: online</a></p>
+</li>
+<li>
+<p>See also slide/page 8 <a href="http://psoc.i2cat.net/node/58?_ga=2.193825709.104808469.1532427731-481173131.1530045137">here</a> (for computer networks)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_theory_of_reliable_transport_1976">Theory of Reliable Transport (1976)</h3>
+<div class="paragraph">
+<p><strong>Richard W. Watson, John G. Fletcher</strong>: <em>An Architecture for Support of Network Operating System Services</em>, 1976</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: <mark><mark>tbd</mark></mark></p>
+</li>
+<li>
+<p>Published: Computer Networks (1976), Volume 4, Issue 1, February 1980, Pages 33-49</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1016/0376-5075(80)90027-6">DOI</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Richard W. Watson, John G. Fletcher</strong>: <em>An Architecture for Support of Network Operating System Services</em>, 1979</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: <mark><mark>tbd</mark></mark></p>
+</li>
+<li>
+<p>Published: Conference: 4. Berkeley workshop on distributed data management and computer networks, Berkeley, CA, USA, 28 Aug 1979</p>
+</li>
+<li>
+<p>Links
+<a href="https://www.osti.gov/biblio/6043599">OSTI</a> |
+<a href="https://books.google.ie/books?hl=en&amp;lr=&amp;id=c7I-AAAAIAAJ&amp;oi=fnd&amp;pg=PA18&amp;dq=Architecture+for+support+of+network+operating+system+services&amp;ots=2MILdsHqgq&amp;sig=YkAjnYKU2PEjZs_dGNolFScUjRs&amp;redir_esc=y#v=onepage&amp;q=Architecture%20for%20support%20of%20network%20operating%20system%20services&amp;f=false">Online</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Richard W. Watson</strong>: <em>Timer-based Mechanisms in reliable Transport Protocol Connection Management: a Comparison of the TCP and Delta-t Protocol Approaches</em>, 1980</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: only 3 timers are needed, in the protocol, no local clocks and no clock synchronization required</p>
+</li>
+<li>
+<p>Published: Conference: Trends and applications symposium, Gaithersburg, MD, USA, 29 May 1980</p>
+</li>
+<li>
+<p>Links
+<a href="https://www.osti.gov/biblio/5550912">OSTI</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Richard W. Watson</strong>: <em>Timer-based Mechanisms in reliable Transport Protocol Connection Management</em>, 1981</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: only 3 timers are needed, in the protocol, no local clocks and no clock synchronization required</p>
+</li>
+<li>
+<p>Original break-through happened in 1978, so some reference date it to 1978</p>
+</li>
+<li>
+<p>Also published as IEN193</p>
+</li>
+<li>
+<p>Published: Computer Networks (1976), Volume 5, Issue 1, February 1981, Pages 47-56</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1016/0376-5075(81)90031-3">DOI</a> |
+<a href="https://www.rfc-editor.org/ien/ien193.pdf">PDF: IEN193</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Richard W. Watson</strong>: <em>Delta-T Protocol Specification</em>, 1981</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: only 3 timers are needed, in the protocol, no local clocks and no clock synchronization required</p>
+</li>
+<li>
+<p>Published: Lawrence Livermore National Lab., CA (USA), UCID-19293</p>
+</li>
+<li>
+<p>Links
+<a href="https://www.osti.gov/servlets/purl/5542785">OSTI</a> |
+<a href="https://www.osti.gov/servlets/purl/5542785">PDF</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Richard W. Watson</strong>: <em>Delta-t Transport Protocol: Features and Experience</em>, 1989</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: Delte-T experience report</p>
+</li>
+<li>
+<p>Published: 1989 Proceedings. 14th Conference on Local Computer Networks (LCN)</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1109/LCN.1989.65288">DOI</a> |
+<a href="https://www.osti.gov/biblio/5634768">OSTI</a> |
+<a href="https://www.computer.org/csdl/proceedings/lcn/1989/1968/00/00065288.pdf">PDF</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_naming_and_addressing_1978">Naming and Addressing (1978)</h3>
+<div class="paragraph">
+<p><strong>John Shoch</strong>: <em>Inter-Network Naming, Addressing, and Routing</em>, 1978</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: names, addresses, routing</p>
+</li>
+<li>
+<p>Published: Compcon Fall 78 (17th : 1978 : Washington, D.C.), September 5-8, Washington DC, pp. 72-79</p>
+</li>
+<li>
+<p>Also published as IETF IEN 19</p>
+</li>
+<li>
+<p>Also published in:  Also in Thurber, K. (ed.), Tutorial: Distributed Processor Communication Architecture, IEEE Publ. #EHO 152-9, 1979, pp. 280-287</p>
+</li>
+<li>
+<p>Links
+<a href="https://www.ietf.org/rfc/ien/ien19.txt">IEN19: txt</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Jerome H. Saltzer</strong>: <em>Naming and Binding of Objects</em>, 1978</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: defines name, defines name binding</p>
+</li>
+<li>
+<p>Published: chapter 3 In: Bayer R., Graham R.M., Seegmüller G. (eds) Operating Systems. Lecture Notes in Computer Science, vol 60. Springer, Berlin, Heidelberg</p>
+</li>
+<li>
+<p>Preprint from 1977, so some reference date it to 1977</p>
+</li>
+<li>
+<p>Links
+<a href="https://doi.org/10.1007/3-540-08755-9_4">DOI</a> |
+<a href="http://web.mit.edu/Saltzer/www/publications/nbo/nbo.pdf">PDF (scanned)</a> |
+<a href="http://web.mit.edu/Saltzer/www/publications/nbo/nbo.html">online</a></p>
+</li>
+<li>
+<p>See also slide/page 8 <a href="http://psoc.i2cat.net/node/58?_ga=2.193825709.104808469.1532427731-481173131.1530045137">here</a> (for computer networks)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Jerome H. Saltzer</strong>: <em>On the Naming and Binding of Network Destinations</em>, 1982</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reasons to read: further thoughts in name and name binding</p>
+</li>
+<li>
+<p>Published: FIP TC 6 International In-Depth Symposium on Local Networks, LCN, P. Ravasio (Eds.), pp 311-317, 1982</p>
+</li>
+<li>
+<p>Also published as IETF RFC 1498 (1983)</p>
+</li>
+<li>
+<p>Preprint from 1977, so some reference date it to 1977</p>
+</li>
+<li>
+<p>Links
+<a href="http://web.mit.edu/Saltzer/www/publications/florence.run">runoff manuscript</a> |
+<a href="http://web.mit.edu/Saltzer/www/publications/florence_slides.pdf">PDF: slides</a> |
+<a href="http://web.mit.edu/Saltzer/www/publications/lnn/csr-lnn-028.pdf">LNN draft</a> |
+<a href="https://dx.doi.org/10.17487/RFC1498">DOI: RFC1498</a></p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
@@ -636,7 +1428,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p><strong>Alex McKenzie</strong>: <em>INWG and the Conception of the Internet: An Eyewitness Account</em>, 2016</p>
+<p><strong>Alex McKenzie</strong>: <em>INWG and the Conception of the Internet: An Eyewitness Account</em>, 2011</p>
 </div>
 <div class="ulist">
 <ul>
@@ -731,7 +1523,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-08-02 21:50:36 IST
+Last updated 2018-08-03 11:59:30 IST
 </div>
 </div>
 </body>
