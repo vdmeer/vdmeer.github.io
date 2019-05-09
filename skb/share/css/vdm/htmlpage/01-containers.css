@@ -1,9 +1,0 @@
-#container-page {width: 100%; text-align: left; min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -27px;}
-#container-head-outer {}
-#container-head-inner {}
-
-#container-content {background: #fafafa; width: 90%; margin: 0 auto;} /* border-right: 1px solid; border-left: 1px solid; */
-
-#push,
-#container-foot-outer {height: 27px;}
-#container-foot-inner {}
