@@ -1,5 +1,0 @@
-== VANDERMEER Website
-
-This is my generated and published website.
-
-The final site is published at link:https://vdmeer.github.io/[site].
