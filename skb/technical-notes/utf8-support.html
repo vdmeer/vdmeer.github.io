@@ -93,18 +93,48 @@
           <span class="icon-chevron-right"></span>
         Research Notes</a>
                   </li>
-                                                                                              
+                                                                                                                                                                            
       <li>
   
                           <a href="../technical-notes.html" title="Technical Notes">
           <span class="icon-chevron-down"></span>
         Technical Notes</a>
                     <ul class="nav nav-list">
-                    
+                                                                                                                                
       <li class="active">
   
-            <a href="#"><span class="none"></span>UTF-8 Support</a>
-          </li>
+            <a href="#"><span class="icon-chevron-down"></span>UTF-8 Support</a>
+                  <ul class="nav nav-list">
+                    
+      <li>
+  
+                          <a href="../technical-notes/utf-8/ide-editors.html" title="IDEs and Editors">
+          <span class="none"></span>
+        IDEs and Editors</a>
+            </li>
+                    
+      <li>
+  
+                          <a href="../technical-notes/utf-8/java.html" title="Java">
+          <span class="none"></span>
+        Java</a>
+            </li>
+                    
+      <li>
+  
+                          <a href="../technical-notes/utf-8/console.html" title="Console and Terminals">
+          <span class="none"></span>
+        Console and Terminals</a>
+            </li>
+                    
+      <li>
+  
+                          <a href="../technical-notes/utf-8/testing-console.html" title="Testing the Console">
+          <span class="none"></span>
+        Testing the Console</a>
+            </li>
+              </ul>
+        </li>
                     
       <li>
   
@@ -170,101 +200,10 @@
             <div class="sect1">
 <h2 id="utf_8_support">UTF-8 Support</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="ides_and_editors">IDEs and Editors</h3>
 <div class="paragraph">
-<p>Editing source files requires an IDE or editor that can handle UTF-8 and being configured to do so.
-Otherwise all UTF-8 characters will be scrambled.</p>
-</div>
-<div class="paragraph">
-<p>In Eclipse, one can set the respective file, the project or the complete workspace to use UTF-8 encoding.
-The default on Windows is CP1252, so make sure to change that before opening any UTF-8 file.
-Simply change the text file encoding on the resource.
-This will also change the output of the Eclipse console to UTF.</p>
-</div>
-<div class="paragraph">
-<p>Other editors will have their specific way to configure for UTF file handling.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="console_and_terminal">Console and Terminal</h3>
-<div class="paragraph">
-<p>Console settings depend very much on the operating system, the terminal program, and the actual font that is used.</p>
-</div>
-<div class="paragraph">
-<p>In Windows (using <code>cmd</code> as shell), change the code page using this command: <code>chcp 65001</code>.
-In Cygwin, use a terminal that supports UTF-8, for instance the popular <code>mintty</code>.
-For both, the font <code>Lucida Console</code> supports almost all UTF-8 box drawing characters.</p>
-</div>
-<div class="paragraph">
-<p>Unix and Apple systems are usually better for UTF support.</p>
-</div>
-<div class="sect3">
-<h4 id="testing_the_console">Testing the Console</h4>
-<div class="paragraph">
-<p>There are several UTF-8 encoded files one can use to test a console or terminal.
-A few of them are listed in the table below.
-Simply copy the text of the files into your console and see if the output is as expected.</p>
-</div>
-<table class="tableblock frame-none grid-rows spread">
-<colgroup>
-<col style="width: 30%;"/>
-<col style="width: 70%;"/>
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Source</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/2001/06/utf-8-test/">W3C</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A large set of files, all in UTF-8, that can be used to test UTF-8 terminal capabilities.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/2001/06/utf-8-test/UTF-8-demo.html">W3C UTF-8 Demo</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This is an example from the W3C using a lot of commonly used UTF-8 characters.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/2001/06/utf-8-test/postscript-utf-8.html">W3C UTF-8 PS</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">List of 271 Unicode characters that represent a minimum repertoire that any modern Postscript printer driver receiving plaintext should be able to render.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.cl.cam.ac.uk/~mgk25/ucs/examples/">mgk25</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Set of UTF-8 files maintained by <em>Dr Markus Kuhn</em>, most of which are also hosted on the W3C links shown above.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="java">Java</h3>
-<div class="paragraph">
-<p>The java compiler might need a reminder to use UTF-8.
-The option <code>-encoding UTF-8</code> should do the trick.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="javadoc">Javadoc</h3>
-<div class="paragraph">
-<p>Javadoc has 3 options for dealing with UTF-8 characters.
-Encoding for the source (i.e. reading UTF-8 encoded java files),
-    <code>docencoding</code> for the output (i.e. the html encoding) and
-    <code>charset</code> for the output (i.e. to tell the browser what character set to use).
-All of these options need to be set to UTF-8.</p>
-</div>
-<div class="paragraph">
-<p>The ANT task for Javadoc has those options.
-So using <code>encoding="UTF-8"</code>, <code>docencoding="UTF-8"</code> and <code>charset="UTF-8"</code> should create UTF-8 HTML.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="jvm">JVM</h3>
-<div class="paragraph">
-<p>Running a Java program with UTF output might require to set the JVM to UTF as well.
-<code>-Dfile.encoding=UTF-8</code> should do the trick.</p>
-</div>
+<p>UTF-8 should be the default, standard character set being used everywhere today.
+However, in many contexts this - still - requires special settings and configurations.
+The pages here provide some information on how to gain UTF-8 support in different contexts.</p>
 </div>
 </div>
 </div>
